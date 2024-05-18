@@ -1,9 +1,0 @@
-# Ensure mod_headers module is enabled
-<<<<<<< HEAD
-# Header set Content-Security-Policy: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googleapis.com https://*.gstatic.com; style-src 'self' 'unsafe-inline' https://*.googleapis.com; img-src 'self' data: https://*.googleapis.com https://*.gstatic.com; connect-src 'self' https://*.googleapis.com;"
-=======
-<IfModule mod_headers.c>
-    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'https://code.jquery.com' 'https://maps.googleapis.com' 'https://*.gstatic.com' 'https://*.google.com' 'https://*.ggpht.com' 'https://*.googleusercontent.com' 'unsafe-inline' 'unsafe-eval' blob:; img-src 'self' 'https://*.googleapis.com' 'https://*.gstatic.com' 'https://*.google.com' 'https://*.googleusercontent.com' data:; frame-src 'self' '*.google.com'; connect-src 'self' 'https://*.googleapis.com' 'https://*.google.com' 'https://*.gstatic.com' data: blob:; font-src 'self' 'https://fonts.gstatic.com'; style-src 'self' 'https://fonts.googleapis.com' 'unsafe-inline'; worker-src 'self' blob:;"
-</IfModule>
->>>>>>> c7eec72 (htaccess update)
-
