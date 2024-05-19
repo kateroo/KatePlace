@@ -6,7 +6,12 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <iframe sandbox="allow-scripts allow-top-navigation allow-forms" src="content.php?url=https://developers-dot-devsite-v2-prod.appspot.com/my-business/content/tools/placeid-lookup" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="allowfullscreen" allow="clipboard-write;" style="height: calc(-95px + 100vh); width: 100%; border: none;"></iframe>
-
+    <iframe src="https://developers-dot-devsite-v2-prod.appspot.com/my-business/content/tools/placeid-lookup" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="allowfullscreen" allow="clipboard-write;" style="height: calc(-95px + 100vh); width: 100%; border: none;"></iframe>
+    <script>
+        $(document).ready(function() {
+            var $iframeBody = $("iframe").contents().find("body");
+            $iframeBody.css("background-color", "blue");
+        });
+    </script>
 </body>
 </html>
